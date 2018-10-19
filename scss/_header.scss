@@ -1,0 +1,38 @@
+header{
+    background-image: url('../../images/background.png');
+    background-size: cover;
+    color: white;
+    padding: 30px 10px;
+    border-top: 5px solid $green;
+
+    > div{
+        margin: auto;
+        width: 640px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .container{
+            width: 300px;
+
+            h1{
+                font-family: 'Pacifico', cursive;
+            }
+        }
+    }
+
+    .mao{
+        display: none;
+        width: 300px;
+    }
+}
+
+@media(min-width: 768px){
+    header{
+        padding: 70px 10px 0 10px;
+
+        .mao{
+            display: block;
+        }
+    } 
+}
